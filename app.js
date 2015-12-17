@@ -1,0 +1,1 @@
+var app = angular.module('futaba-clone', ['ngRoute', 'firebase']);
