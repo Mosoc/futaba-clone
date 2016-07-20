@@ -1,4 +1,4 @@
-var app = angular.module('futaba-clone', ['ngRoute', 'firebase']);
+var app = angular.module('app', ['ngRoute', 'firebase']);
 
 //using ngRoute
 app.config(function($routeProvider){
@@ -7,9 +7,11 @@ app.config(function($routeProvider){
             controller: 'BoardController',
             templateUrl: 'board.html'
         })
-//        .otherwise({redirectTo: '/'})
+        .otherwise({redirectTo: '/'})
 });
 
-app.controller("BoardController", function($scope, $firebaseObject) {
+app.controller("BoardCtrl", function() {
+    var self = this;
+    self.example = 123;
 
 });
